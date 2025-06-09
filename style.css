@@ -77,9 +77,9 @@ body, html {
     position: absolute;
     bottom: 20px;
     right: 20px;
+    background: #f7d9d3;
     font-size: 18px;
-    color: white;
-    background: rgba(0,0,0,0.4);
+    color: rgb(22, 13, 25);
     padding: 10px;
     border-radius: 10px;
   }
@@ -161,7 +161,28 @@ body, html {
     width: 40%;
     height: auto;
   }
-
+  .anniversary-letter {
+    background-color: rgba(255, 245, 240, 0.8);
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a2c2a;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
   @media (max-width: 768px) {
     .tabletop {
@@ -198,8 +219,6 @@ body, html {
       height: auto;
       left: 0.5%;
     }
-  }
-
   .anniversary-letter {
     background-color: rgba(255, 245, 240, 0.8);
     padding: 2rem;
@@ -219,3 +238,19 @@ body, html {
     text-align: right;
     font-style: italic;
   }
+  .letter.open {
+    position: fixed;
+    top: 5vh;
+    left: 50%;
+    margin-top: 10%;
+    margin-bottom: 20px;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: 90vh;
+    padding: 20px;
+    font-size: 1.2rem;
+    overflow-y: auto;
+    z-index: 999;
+    animation: slideUp 0.4s ease-out;
+  }
+}
