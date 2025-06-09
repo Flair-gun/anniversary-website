@@ -214,7 +214,7 @@ body, html {
     }
     .letter {
       position: relative;
-      margin-top: -95%;
+      margin-top: -85%;
       width: 80vw;
       height: auto;
       left: 0.5%;
@@ -254,6 +254,6 @@ body, html {
     animation: slideUp 0.4s ease-out;
   }
   .countdown {
-    bottom: 13%;
+    bottom: 10%;
   }
 }
