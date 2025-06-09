@@ -195,8 +195,8 @@ body, html {
     }
     .cake-wrapper {
       position: relative;
-      top: -180px;
-      left: 10%; /* reset */
+      top: -220px;
+      left: 15%; /* reset */
       transform: none; /* reset */
       align-self: center;
       width: 80%;
@@ -210,11 +210,11 @@ body, html {
       position: relative;
       margin-top: -100px;
       width: 90%;
-      right: 10%;
+      right: 15%;
     }
     .letter {
       position: relative;
-      margin-top: -280px;
+      margin-top: -320px;
       width: 80vw;
       height: auto;
       left: 0.5%;
@@ -243,7 +243,7 @@ body, html {
     top: 5vh;
     left: 50%;
     margin-top: 10%;
-    margin-bottom: 20px;
+    margin-bottom: 13%;
     transform: translateX(-50%);
     width: 90vw;
     height: 90vh;
@@ -252,5 +252,8 @@ body, html {
     overflow-y: auto;
     z-index: 999;
     animation: slideUp 0.4s ease-out;
+  }
+  .countdown {
+    bottom: 10%;
   }
 }
