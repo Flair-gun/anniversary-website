@@ -199,3 +199,23 @@ body, html {
       left: 0.5%;
     }
   }
+
+  .anniversary-letter {
+    background-color: rgba(255, 245, 240, 0.8);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a2c2a;
+  }
+  
+  .anniversary-letter .ending {
+    margin-top: 2rem;
+    font-weight: bold;
+    text-align: right;
+    font-style: italic;
+  }
