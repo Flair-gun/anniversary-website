@@ -195,7 +195,7 @@ body, html {
     }
     .cake-wrapper {
       position: relative;
-      top: -29%;
+      top: -27%;
       left: 15%; /* reset */
       transform: none; /* reset */
       align-self: center;
@@ -214,7 +214,7 @@ body, html {
     }
     .letter {
       position: relative;
-      margin-top: -98%;
+      margin-top: -95%;
       width: 80vw;
       height: auto;
       left: 0.5%;
@@ -254,6 +254,6 @@ body, html {
     animation: slideUp 0.4s ease-out;
   }
   .countdown {
-    bottom: 15%;
+    bottom: 13%;
   }
 }
