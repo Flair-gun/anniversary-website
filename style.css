@@ -195,7 +195,7 @@ body, html {
     }
     .cake-wrapper {
       position: relative;
-      top: -28%;
+      top: -29%;
       left: 15%; /* reset */
       transform: none; /* reset */
       align-self: center;
@@ -214,7 +214,7 @@ body, html {
     }
     .letter {
       position: relative;
-      margin-top: -94%;
+      margin-top: -98%;
       width: 80vw;
       height: auto;
       left: 0.5%;
