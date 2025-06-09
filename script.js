@@ -24,7 +24,7 @@ function checkAllFlamesOut() {
 // 🎉 Countdown to Next Anniversary
 function updateCountdown() {
   const countdown = document.getElementById("countdown");
-  const nextAnniversary = new Date("2026-05-24T00:00:00");
+  const nextAnniversary = new Date(new Date().getFullYear() + 1, 5, 9); // June is month 5 (0-indexed)
   const now = new Date();
   const diff = nextAnniversary - now;
 
