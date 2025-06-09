@@ -254,6 +254,6 @@ body, html {
     animation: slideUp 0.4s ease-out;
   }
   .countdown {
-    bottom: 10%;
+    bottom: 5%;
   }
 }
