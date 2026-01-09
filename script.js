@@ -24,8 +24,18 @@ function checkAllFlamesOut() {
 // 🎉 Countdown to Next Anniversary
 function updateCountdown() {
   const countdown = document.getElementById("countdown");
-  const nextAnniversary = new Date(new Date().getFullYear() + 1, 5, 9); // June is month 5 (0-indexed)
+
   const now = new Date();
+  const currentYear = now.getFullYear();
+
+  // June is month 5 (0-indexed)
+  let nextAnniversary = new Date(currentYear, 5, 9);
+
+  // If June 9 has already passed this year, use next year
+  if (now > nextAnniversary) {
+    nextAnniversary = new Date(currentYear + 1, 5, 9);
+  }
+
   const diff = nextAnniversary - now;
 
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -44,7 +54,7 @@ function triggerHearts() {
     const heart = document.createElement("div");
     heart.textContent = "💗";
     heart.classList.add("heart");
-    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.left = i*10 + "vw";
     document.body.appendChild(heart);
 
     setTimeout(() => {
